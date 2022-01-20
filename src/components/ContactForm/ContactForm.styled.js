@@ -16,7 +16,7 @@ export const Label = styled.label`
   font-size: 24px;
   color: rgb(105, 46, 3);`
 
-export const Field = styled.input`
+export const Input = styled.input`
  margin-left: 15px;`
 
  export const Button = styled.button`
