@@ -1,4 +1,5 @@
 import { FilteredList, CardContact, ButtonDelete } from './ContactList.styled';
+import { ReactComponent as TrashIcon } from '../ContactList/trash.svg';
 import PropTypes from 'prop-types';
 
 const ContactList = ({ contacts, onDelete }) => {
@@ -8,7 +9,7 @@ const ContactList = ({ contacts, onDelete }) => {
         <CardContact key={id}>
           <p>{name}</p>
           <p>{number}</p>
-          <ButtonDelete onClick={() => onDelete(id)}>Delete</ButtonDelete>
+          <ButtonDelete onClick={() => onDelete(id)}><TrashIcon width="20" height="20"/></ButtonDelete>
         </CardContact>
       ))}
     </FilteredList>
