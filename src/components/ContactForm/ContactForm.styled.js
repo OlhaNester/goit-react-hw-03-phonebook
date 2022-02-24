@@ -1,26 +1,30 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Form = styled.div`
-padding: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 5px 10px 2px rgba(37, 23, 1, 0.2);
   :not(:last-child) {
-  margin-bottom: 20px}`
+    margin-bottom: 20px;
+  }
+`;
 
 export const Label = styled.label`
   margin-bottom: 15px;
   margin-left: 15px;
-   font-weight: 700;
+  font-weight: 700;
   font-size: 24px;
-  color: rgb(105, 46, 3);`
+  color: rgb(105, 46, 3);
+`;
 
-export const Field = styled.input`
- margin-left: 15px;`
+export const Input = styled.input`
+  margin-left: 15px;
+`;
 
- export const Button = styled.button`
- margin-left: auto;
+export const Button = styled.button`
+  margin-left: auto;
   margin-right: auto;
   border: none;
   text-decoration: none;
@@ -41,17 +45,20 @@ export const Field = styled.input`
   transition: 0.3s;
   :hover {
     background: #7c4d01;
-  box-shadow: 0 15px 20px rgba(226, 139, 58, 0.4);
-  color: white;
-  transform: translateY(-7px);  
-  
-  :hover, :active, :focus {
-   outline: none;   
-  }} `
+    box-shadow: 0 15px 20px rgba(226, 139, 58, 0.4);
+    color: white;
+    transform: translateY(-7px);
+
+    :hover,
+    :active,
+    :focus {
+      outline: none;
+    }
+  }
+`;
 
 export const ErrorText = styled.span`
-color: red;
-font-size: 20px;
-margin-top: 5px;
-`
-
+  color: red;
+  font-size: 20px;
+  margin-top: 5px;
+`;
