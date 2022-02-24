@@ -151,5 +151,3 @@ export class CotactForm extends Component {
     );
   }
 }
-
-export default CotactForm;
